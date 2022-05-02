@@ -24,4 +24,3 @@ will be in the drop down when you are asked which Topic to use for your function
 4. Configure the function as you see fit - for reference our call returns a little under a GB, and the execution takes around 30s.  Though, leave plenty of room for growth!
 
 
----IN PROGRESS---
