@@ -17,7 +17,7 @@ logger = logging.getLogger()
 def upload_blob(bucket_name, destination_blob_name, contents):
 
     storage_client = storage.Client()
-
+    #formats contents into newline delimited json
     contents = '\n'.join(map(json.dumps,[c for c in contents] ))
     
     
@@ -107,7 +107,7 @@ def facebook_to_storage(event,context):
         
 
 
-        upload_blob('blended_ingestion', f'facebook/{date_td}.json',fb_data)
+        upload_blob(<bucket name>, f'facebook/{date_td}.json',fb_data)
 
         print("""This Function was triggered by messageId {} published at {} to {}
     """.format(context.event_id, context.timestamp, context.resource["name"]))
